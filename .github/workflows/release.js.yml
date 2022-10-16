@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Create Sentry release
-      uses: getsentry/action-release@v1.0.0
+      uses: getsentry/action-release@v1.0.0 --auto
       env:
         SENTRY_AUTH_TOKEN: ${{'9dc7f9e62fd74bb1967ae26f8ef55ceceb59ee563a7640b2b99ba63aaa5cc990'}}
         SENTRY_ORG: ${{'bitcs-j7'}}
