@@ -11,6 +11,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <button onClick={breakTheCode}>Brake the Code</button>
+         <button onClick={breakTheCode}>Brake the Code 2</button>
       </header>
     </div>
   );
