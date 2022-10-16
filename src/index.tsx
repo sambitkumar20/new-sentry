@@ -3,6 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import * as Sentry from "@sentry/browser";
+
+Sentry.init({
+    dsn: "https://05ce17c729af4704a82382537a521289@o4503988773912576.ingest.sentry.io/4503988823130112",
+
+    // Set tracesSampleRate to 1.0 to capture 100%
+    // of transactions for performance monitoring.
+    // We recommend adjusting this value in production
+    tracesSampleRate: 1.0,
+});
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
