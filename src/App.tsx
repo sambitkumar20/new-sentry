@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={breakTheCode}>Brake the Code V2</button>
+        <button onClick={breakTheCode}>Brake the Code</button>
       </header>
     </div>
   );
