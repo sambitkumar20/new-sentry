@@ -33,6 +33,9 @@ jobs:
       with:
         name: production-files
         path: ./build
+        
+    - name: Post build
+      run : rm -rf dist/**/*.js.map
   
   deploy:
     name: Deploy
@@ -47,9 +50,6 @@ jobs:
         name: production-files
         path: ./build
         
-    - name: Post build
-      run : rm -rf dist/**/*.js.map
-
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
