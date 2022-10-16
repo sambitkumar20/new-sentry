@@ -1,0 +1,6 @@
+[defaults]
+org=bitcs-j7
+project=sentry-test
+
+[auth]
+token=a9e824e28d3749c1a50124f71d0f350ff8f2131d9fcf4db095101634ac4ab94e
