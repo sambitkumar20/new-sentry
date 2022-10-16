@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@sentry/browser": "^7.15.0",
+    "@sentry/cli": "^2.7.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -41,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@sentry/webpack-plugin": "^1.19.1",
+    "sentry-delete-sourcemaps-webpack-plugin": "^0.1.1"
   }
 }
