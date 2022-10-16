@@ -26,11 +26,8 @@ jobs:
       run: npm ci
     
     - name: Build project
-      run: npm run build 
-      
-    - name: Remove map file
-      run : rm -rf dist/**/*.js.map
-      
+      run: npm run build && rm ./public/*.map
+            
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
       with:
