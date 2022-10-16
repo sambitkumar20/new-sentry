@@ -26,7 +26,10 @@ jobs:
       run: npm ci
     
     - name: Build project
-      run: GENERATE_SOURCEMAP=false npm run build 
+      run: npm run build 
+      
+    - name: Post build
+      run : rimraf ./build/**/*.js.map
     
 
     - name: Upload production-ready build files
