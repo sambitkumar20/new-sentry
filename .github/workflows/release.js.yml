@@ -12,7 +12,7 @@ jobs:
     - name: Create Sentry release
       uses: getsentry/action-release@v1.0.0
       env:
-        SENTRY_AUTH_TOKEN: ${{'a9e824e28d3749c1a50124f71d0f350ff8f2131d9fcf4db095101634ac4ab94e'}}
+        SENTRY_AUTH_TOKEN: ${{'9dc7f9e62fd74bb1967ae26f8ef55ceceb59ee563a7640b2b99ba63aaa5cc990'}}
         SENTRY_ORG: ${{'bitcs-j7'}}
         SENTRY_PROJECT: ${{'sentry-test'}}
       with:
