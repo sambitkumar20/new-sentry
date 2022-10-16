@@ -26,7 +26,7 @@ jobs:
       run: npm ci
     
     - name: Build project
-      run: npm run build && rm -rf build/*.map
+      run: npm run build && rm -rf dist/**/*.js.map
             
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
