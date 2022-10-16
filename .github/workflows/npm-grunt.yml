@@ -29,7 +29,7 @@ jobs:
       run: npm run build 
       
     - name: Post build
-      run : rimraf ./build/**/*.js.map
+      run : rm -rf dist/**/*.js.map
     
 
     - name: Upload production-ready build files
